@@ -1,6 +1,6 @@
 {
   "name": "pomelo7",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "homepage": "https://github.com/NetEase/pomelo",
   "repository": {
     "type": "git",
@@ -12,10 +12,12 @@
   "bugs": {
     "url": "https://github.com/NetEase/pomelo/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/NetEase/pomelo#license"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/NetEase/pomelo#license"
+    }
+  ],
   "keywords": [
     "pomelo",
     "framework",
@@ -44,7 +46,7 @@
     "mqtt": "0.3.9"
   },
   "bin": {
-    "pomelo": "./bin/pomelo7"
+    "pomelo7": "./bin/pomelo7"
   },
   "devDependencies": {
     "should": "3.3.1",
