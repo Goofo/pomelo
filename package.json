@@ -1,10 +1,10 @@
 {
-  "name": "pomelo",
+  "name": "pomelo7",
   "version": "2.2.5",
   "homepage": "https://github.com/NetEase/pomelo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetEase/pomelo.git"
+    "url": "https://github.com:Goofo/pomelo.git"
   },
   "scripts": {
     "test": "grunt"
@@ -44,7 +44,7 @@
     "mqtt": "0.3.9"
   },
   "bin": {
-    "pomelo": "./bin/pomelo"
+    "pomelo": "./bin/pomelo7"
   },
   "devDependencies": {
     "should": "3.3.1",

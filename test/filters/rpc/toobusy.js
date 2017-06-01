@@ -22,7 +22,7 @@ describe('#toobusyFilter', function () {
             }
             const start = new Date();
             while ((new Date() - start) < 250) {
-                for (var i = 0; i < 1e5;) i++;
+                for (let i = 0; i < 1e5;) i++;
             }
             setTimeout(load, 0);
         }

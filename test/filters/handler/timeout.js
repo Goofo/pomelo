@@ -9,8 +9,8 @@ const mockSession = {
 const WAIT_TIME = 100;
 describe("#serialFilter", function () {
     it("should do before filter ok", function (done) {
-        var service = new FilterService();
-        var filter = timeoutFilter();
+        let service = new FilterService();
+        let filter = timeoutFilter();
         service.before(filter);
 
         service.beforeFilter(null, mockSession, function () {
@@ -22,9 +22,9 @@ describe("#serialFilter", function () {
     });
 
     it("should do after filter by doing before filter ok", function (done) {
-        var service = new FilterService();
-        var filter = timeoutFilter();
-        var _session;
+        let service = new FilterService();
+        let filter = timeoutFilter();
+        let _session;
         service.before(filter);
 
         service.beforeFilter(null, mockSession, function () {
