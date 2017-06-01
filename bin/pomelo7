@@ -196,7 +196,7 @@ function createApplicationAt(ph, type) {
         switch (type) {
             case '1':
                 // use websocket
-                let unlinkFiles = ['game-server/app.js.sio',
+                var unlinkFiles = ['game-server/app.js.sio',
                     'game-server/app.js.wss',
                     'game-server/app.js.mqtt',
                     'game-server/app.js.sio.wss',
@@ -213,7 +213,7 @@ function createApplicationAt(ph, type) {
                 break;
             case '2':
                 // use socket.io
-                let unlinkFiles = ['game-server/app.js',
+                var unlinkFiles = ['game-server/app.js',
                     'game-server/app.js.wss',
                     'game-server/app.js.udp',
                     'game-server/app.js.mqtt',
@@ -234,7 +234,7 @@ function createApplicationAt(ph, type) {
                 break;
             case '3':
                 // use websocket wss
-                let unlinkFiles = ['game-server/app.js.sio',
+                var unlinkFiles = ['game-server/app.js.sio',
                     'game-server/app.js',
                     'game-server/app.js.udp',
                     'game-server/app.js.sio.wss',
@@ -255,7 +255,7 @@ function createApplicationAt(ph, type) {
                 break;
             case '4':
                 // use socket.io wss
-                let unlinkFiles = ['game-server/app.js.sio',
+                var unlinkFiles = ['game-server/app.js.sio',
                     'game-server/app.js',
                     'game-server/app.js.udp',
                     'game-server/app.js.wss',
@@ -278,7 +278,7 @@ function createApplicationAt(ph, type) {
                 break;
             case '5':
                 // use socket.io wss
-                let unlinkFiles = ['game-server/app.js.sio',
+                var unlinkFiles = ['game-server/app.js.sio',
                     'game-server/app.js',
                     'game-server/app.js.wss',
                     'game-server/app.js.mqtt',
@@ -297,7 +297,7 @@ function createApplicationAt(ph, type) {
                 break;
             case '6':
                 // use socket.io
-                let unlinkFiles = ['game-server/app.js',
+                var unlinkFiles = ['game-server/app.js',
                     'game-server/app.js.wss',
                     'game-server/app.js.udp',
                     'game-server/app.js.sio',
@@ -317,7 +317,7 @@ function createApplicationAt(ph, type) {
                 rmdir(path.resolve(ph, 'web-server/public/js/lib/local'));
                 break;
         }
-        let replaceFiles = ['game-server/app.js',
+        var replaceFiles = ['game-server/app.js',
             'game-server/package.json',
             'web-server/package.json'];
         for (let j = 0; j < replaceFiles.length; j++) {
